@@ -1,32 +1,32 @@
 const ProjectData = [
   {
     Title: "Project 1",
-    Image: "Image/icons8-project-80.png",
-    ImageProject: "Image/Avatar-shailesh.jpg",
+    Image: "image/icons8-project-80.png",
+    ImageProject: "image/Avatar-shailesh.jpg",
     Link: "https://www.google.com/",
     description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
   },
   {
     Title: "Project 1",
-    Image: "Image/icons8-project-80.png",
-    ImageProject: "Image/Avatar-shailesh.jpg",
+    Image: "image/icons8-project-80.png",
+    ImageProject: "image/Avatar-shailesh.jpg",
     Link: "https://www.google.com/",
     description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
   },
   {
     Title: "Project 1",
-    Image: "Image/icons8-project-80.png",
-    ImageProject: "Image/Avatar-shailesh.jpg",
+    Image: "image/icons8-project-80.png",
+    ImageProject: "image/Avatar-shailesh.jpg",
     Link: "https://www.google.com/",
     description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
   },
   {
     Title: "Project 1",
-    Image: "Image/icons8-project-80.png",
-    ImageProject: "Image/Avatar-shailesh.jpg",
+    Image: "image/icons8-project-80.png",
+    ImageProject: "image/Avatar-shailesh.jpg",
     Link: "https://www.google.com/",
     description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
