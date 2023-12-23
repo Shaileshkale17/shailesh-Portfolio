@@ -110,49 +110,8 @@
               </p>
             </div>
             <div class="working_tech">
-              <div class="techBase">
-                <div class="box-tech">
-                  <img
-                    src="image/icons8-github.svg"
-                    alt=""
-                    class="image-project" />
-                  <div class="box-text-tech">
-                    <h1>Web tech</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Suscipit et dolores non quibusdam sed optio error,
-                      pariatur explicabo earum iste?
-                    </p>
-                  </div>
-                </div>
-                <div class="box-tech">
-                  <img
-                    src="image/icons8-github.svg"
-                    alt=""
-                    class="image-project" />
-                  <div class="box-text-tech">
-                    <h1>Web tech</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Suscipit et dolores non quibusdam sed optio error,
-                      pariatur explicabo earum iste?
-                    </p>
-                  </div>
-                </div>
-                <div class="box-tech">
-                  <img
-                    src="image/icons8-github.svg"
-                    alt=""
-                    class="image-project" />
-                  <div class="box-text-tech">
-                    <h1>Web tech</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Suscipit et dolores non quibusdam sed optio error,
-                      pariatur explicabo earum iste?
-                    </p>
-                  </div>
-                </div>
+              <div class="techBase" id="Working-main">
+                <!-- data to javasctip file  -->
               </div>
             </div>
           </div>
@@ -396,23 +355,27 @@
           </div>
           <form action="" method="post">
             <div class="form-container">
-            <div class="FormInput">
-              <label for="Username"> User Name</label>
-              <input type="text" name="Username" id="UsernameS" />
+              <div class="FormInput">
+                <label for="Username"> User Name</label>
+                <input type="text" name="Username" id="UsernameS" />
+              </div>
+              <div class="FormInput">
+                <label for="email">User Email</label>
+                <input type="email" name="email" id="emailS" />
+              </div>
+              <div class="FormInput">
+                <label for="number">User Number</label>
+                <input type="number" name="number" id="number" />
+              </div>
+              <div class="FormInput">
+                <label for="message">User message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"></textarea>
+              </div>
             </div>
-            <div class="FormInput">
-              <label for="email">User Email</label>
-              <input type="email" name="email" id="emailS" />
-            </div>
-            <div class="FormInput">
-              <label for="number">User Number</label>
-              <input type="number" name="number" id="number" />
-            </div>
-            <div class="FormInput">
-              <label for="message">User message</label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
-          </div>
             <button type="submit">Submit</button>
           </form>
         </div>
@@ -423,8 +386,7 @@
         All Copyright Reserved By &#169; shailesh kale <span id="Data"></span>
       </p>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/0f319858a6.js"
-      crossorigin="anonymous"></script>
+
+    <script type="module" src="index.js"></script>
   </body>
 </html>

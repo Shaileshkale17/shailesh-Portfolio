@@ -183,7 +183,7 @@ header nav ul li a:hover {
   align-items: center;
   margin: 13px 0;
   gap: 2.5rem;
-  overflow-x: auto;
+  overflow-x: clip;
   overflow-y: hidden;
   width: 45rem;
 }
@@ -227,6 +227,9 @@ header nav ul li a:hover {
   text-align: center;
   text-decoration: underline var(---main-color);
 }
+#Skills .title-h1:hover {
+ 
+}
 /* #About .About-container {
   text-align: center;
 } */
@@ -255,6 +258,7 @@ header nav ul li a:hover {
   grid-template-columns: repeat(3, 2fr);
   width: 60rem;
   gap: 5rem;
+  
 }
 #Skills .Skills-container .Skills-language .box-language {
   width: 20rem;
@@ -283,11 +287,12 @@ header nav ul li a:hover {
   gap: 0.8rem;
 }
 #Skills .Skills-container .Skills-language .box-language .box-text-tech h5 {
-  text-decoration: underline var(---main-color);
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
+  text-decoration: underline var(---main-color);
 }
+
 #Skills .Skills-container .Skills-language .box-language .box-text-tech p {
   padding: 0 1.7rem;
 }
@@ -307,7 +312,9 @@ header nav ul li a:hover {
 #Project .title-h1 {
   text-align: center;
   text-decoration: underline var(---main-color);
+ 
 }
+
 /* #About .About-container {
     text-align: center;
   } */
@@ -364,11 +371,12 @@ header nav ul li a:hover {
   gap: 0.8rem;
 }
 #Project .Project-container .Project-language .box-language .box-text-tech h5 {
-  text-decoration: underline var(---main-color);
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
+  text-decoration: underline var(---main-color);
 }
+
 #Project .Project-container .Project-language .box-language .box-text-tech p {
   padding: 0 1.7rem;
 }
@@ -392,6 +400,7 @@ header nav ul li a:hover {
   text-align: center;
   text-decoration: underline var(---main-color);
 }
+
 /* #About .About-container {
     text-align: center;
   } */
@@ -448,11 +457,12 @@ header nav ul li a:hover {
   gap: 0.8rem;
 }
 #Blog .Blog-container .Blog-language .box-language .box-text-tech h5 {
-  text-decoration: underline var(---main-color);
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
+  text-decoration: underline var(---main-color);
 }
+
 #Blog .Blog-container .Blog-language .box-language .box-text-tech p {
   padding: 0 1.7rem;
 }
@@ -476,7 +486,9 @@ header nav ul li a:hover {
 #Contact .title-h1 {
   text-align: center;
   text-decoration: underline var(---main-color);
+  
 }
+
 #Contact .Contact-container {
   text-align: center;
   display: flex;
@@ -510,6 +522,12 @@ header nav ul li a:hover {
 #Contact .Contact-container form .FormInput input {
   padding: 0.3rem;
   border-radius: 7px;
+  outline-style: none;
+}
+#Contact .Contact-container form .FormInput textarea {
+  padding: 0.3rem;
+  border-radius: 7px;
+  outline-style: none;
 }
 #Contact .Contact-container form button{
     padding: 7px 23px;
