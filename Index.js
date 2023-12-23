@@ -11,7 +11,7 @@ const Working = [
     Title: "UX & UI Developer",
     description:
       "Experienced Web Developer | Building Seamless Digital Experiences with Front-End & Back-End Expertise ",
-    Image: "https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15-1024x768.jpg",
+    Image: "image/UiUX.png",
   },
 ];
 
