@@ -241,6 +241,7 @@ header nav ul li a:hover {
   width: 63rem;
   text-align: -webkit-center;
 }
+
 #Skills .Skills-container .Skills-language .box-language {
   width: 20rem;
   display: flex;
@@ -297,6 +298,15 @@ header nav ul li a:hover {
   padding: 0 1.7rem;
 }
 
+.icon-skill{
+  width: 3rem;
+
+}
+
+a {
+  text-decoration: none;
+    color: var(---white-color);
+}
 /* Project  */
 
 #Project {
@@ -306,7 +316,7 @@ header nav ul li a:hover {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 75rem;
+  height: 85rem;
   gap: 3rem;
 }
 #Project .title-h1 {
