@@ -37,7 +37,6 @@ const ProjectData = [
 document.addEventListener("DOMContentLoaded", (e) => {
   const Projects = document.getElementById("ProjectData");
   ProjectData.forEach((Data) => {
-console.log(Data)
     let Project = `<a href="${Data.Link}">
               <div class="box-language">
                 <img
