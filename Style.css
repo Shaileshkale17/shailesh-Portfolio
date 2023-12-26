@@ -73,6 +73,10 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 
+.title-name{
+  color: var(---main-color);
+}
+
 /* Home Page  */
 #Home {
   color: var(---white-color);
@@ -540,6 +544,12 @@ a {
   border-radius: 7px;
   outline-style: none;
 }
+
+.error{
+  color: red;
+
+}
+
 #Contact .Contact-container form button{
     padding: 7px 23px;
     border: 2px solid var(---main-color);
