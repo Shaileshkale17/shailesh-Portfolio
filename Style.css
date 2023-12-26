@@ -209,6 +209,9 @@ header nav ul li a:hover {
 }
 .container-Home .do-container .working_tech .box-tech .box-text-tech {
   margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /* Skills Me  */
@@ -298,10 +301,6 @@ header nav ul li a:hover {
   padding: 0 1.7rem;
 }
 
-.icon-skill{
-  width: 3rem;
-
-}
 
 a {
   text-decoration: none;
@@ -475,6 +474,8 @@ a {
 
 #Blog .Blog-container .Blog-language .box-language .box-text-tech p {
   padding: 0 1.7rem;
+  height: 2rem;
+
 }
 #Blog .Blog-container .Blog-language .box-language .box-text-tech img {
   width: 18rem;
@@ -561,4 +562,28 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0 12px 0px var(---white-color);
+}
+
+
+/* Main Classes */
+
+.icon-skill{
+  width: 3rem;
+
+}
+
+
+.hrLine{
+  width: 100%;
+  margin: 12px 0;
+  color: var(---main-color);
+}
+
+.capitalize{
+  color: var(---white-color);
+  text-transform: capitalize;
+}
+.soon{
+  color: var(---main-color);
+  text-transform: capitalize;
 }
