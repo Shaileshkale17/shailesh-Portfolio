@@ -5,7 +5,7 @@ const Blog = [
     Iamge: "image/javascript-blog.webp",
     description:
       " Exploring JavaScript Experiments in a Notebook Environment",
-    Link: "../blog.html",
+    Link: "blog.html",
     Data:["24-12-2023"]
   },
   {
