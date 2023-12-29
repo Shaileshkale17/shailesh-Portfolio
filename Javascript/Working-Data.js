@@ -11,7 +11,7 @@ const Working = [
     {
       Title: "UX & UI Developer",
       description:
-        "Experienced Web Developer | Building Seamless Digital Experiences with Front-End & Back-End Expertise ",
+        "UX (User Experience) & UI (User Interface) design focus on crafting seamless, intuitive digital experiences by understanding user needs and translating them into visually engaging and functional interfaces.",
       Image: "image/UiUX.png",
     },
   ];

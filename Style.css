@@ -200,7 +200,8 @@ header nav ul li a:hover {
   text-align: center;
   border: 2px solid var(---main-color);
   position: relative;
-  padding: 2.5rem;
+  padding: 1.5rem;
+  height: 15rem;
 }
 .container-Home .do-container .working_tech .box-tech .image-project {
   position: absolute;

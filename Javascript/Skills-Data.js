@@ -3,31 +3,31 @@ const Skills = [
     Title: "html & css",
     Image: "image/Html_CSS.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit .Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
+      "HTML is the structural language that forms the content of a webpage, while CSS is used for styling and design, enabling the visual presentation of that content.",
   },
   {
     Title: "javascript",
     Image: "image/icons8-javascript.svg",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit .Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
+      "JavaScript is a versatile programming language used for web development, allowing dynamic interactions on websites, from simple animations to complex applications, through its powerful scripting capabilities.",
   },
   {
     Title: "React js",
     Image: "image/React_js.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit .Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
+      "React.js is a powerful JavaScript library used for building user interfaces, enabling efficient creation of interactive web applications through its component-based architecture.",
   },
   {
     Title: "ux & ui",
     Image: "image/UiUX.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit .Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
+      "UX (User Experience) & UI (User Interface) design focus on crafting seamless, intuitive digital experiences by understanding user needs and translating them into visually engaging and functional interfaces.",
   },
   {
     Title: "mern stack",
     Image: "image/Web_developer.png",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit .Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
+      "The MERN stack comprises MongoDB, Express.js, React, and Node.js, offering a robust, full-stack JavaScript framework for building web applications, from the backend to the frontend, with seamless data flow and scalability.",
   },
   
 ];
