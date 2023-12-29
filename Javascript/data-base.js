@@ -9,7 +9,7 @@ setInterval(() => {
   let Minutes = dateTime.getMinutes();
   let Seconds = dateTime.getSeconds();
 
-  let onTimeDate = `Date:- ${ThisDate} - ${Month} - ${Year} Time:-${Hours}:${Minutes}:${Seconds} `;
+  let onTimeDate = `Date:- ${ThisDate}/${Month}/${Year} Time:-${Hours}:${Minutes}:${Seconds} `;
   form[0].value = onTimeDate;
 }, 1000);
 
