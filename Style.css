@@ -73,7 +73,7 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 
-.title-name{
+.title-name {
   color: var(---main-color);
 }
 
@@ -236,7 +236,6 @@ header nav ul li a:hover {
   text-decoration: underline var(---main-color);
 }
 #Skills .title-h1:hover {
- 
 }
 /* #About .About-container {
   text-align: center;
@@ -267,7 +266,6 @@ header nav ul li a:hover {
   grid-template-columns: repeat(3, 2fr);
   width: 60rem;
   gap: 5rem;
-  
 }
 #Skills .Skills-container .Skills-language .box-language {
   width: 20rem;
@@ -303,13 +301,13 @@ header nav ul li a:hover {
 }
 
 #Skills .Skills-container .Skills-language .box-language .box-text-tech p {
-  padding: 0 1.7rem;
+  padding: 0 0.9rem;
+  text-align: justify;
 }
-
 
 a {
   text-decoration: none;
-    color: var(---white-color);
+  color: var(---white-color);
 }
 /* Project  */
 
@@ -326,7 +324,6 @@ a {
 #Project .title-h1 {
   text-align: center;
   text-decoration: underline var(---main-color);
- 
 }
 
 /* #About .About-container {
@@ -392,7 +389,8 @@ a {
 }
 
 #Project .Project-container .Project-language .box-language .box-text-tech p {
-  padding: 0 1.7rem;
+  padding: 0 0.9rem;
+  text-align: justify;
 }
 #Project .Project-container .Project-language .box-language .box-text-tech img {
   width: 18rem;
@@ -478,9 +476,9 @@ a {
 }
 
 #Blog .Blog-container .Blog-language .box-language .box-text-tech p {
-  padding: 0 1.7rem;
+  padding: 0 0.9rem;
+  text-align: justify;
   height: 2rem;
-
 }
 #Blog .Blog-container .Blog-language .box-language .box-text-tech img {
   width: 18rem;
@@ -502,7 +500,6 @@ a {
 #Contact .title-h1 {
   text-align: center;
   text-decoration: underline var(---main-color);
-  
 }
 
 #Contact .Contact-container {
@@ -546,23 +543,21 @@ a {
   outline-style: none;
 }
 
-.error{
+.error {
   color: red;
-
 }
 
-#Contact .Contact-container form button{
-    padding: 7px 23px;
-    border: 2px solid var(---main-color);
-    border-radius: 9px;
-    background-color: transparent;
-    color: var(---white-color);
+#Contact .Contact-container form button {
+  padding: 7px 23px;
+  border: 2px solid var(---main-color);
+  border-radius: 9px;
+  background-color: transparent;
+  color: var(---white-color);
 }
-#Contact .Contact-container form button:hover{
-    border: 2px solid var(---main-color-hover);
-    color: var(---white-color-hover);
+#Contact .Contact-container form button:hover {
+  border: 2px solid var(---main-color-hover);
+  color: var(---white-color-hover);
 }
-
 
 /* footer Page  */
 footer {
@@ -575,26 +570,23 @@ footer {
   box-shadow: 0px 0 12px 0px var(---white-color);
 }
 
-
 /* Main Classes */
 
-.icon-skill{
+.icon-skill {
   width: 3rem;
-
 }
 
-
-.hrLine{
+.hrLine {
   width: 100%;
   margin: 12px 0;
   color: var(---main-color);
 }
 
-.capitalize{
+.capitalize {
   color: var(---white-color);
   text-transform: capitalize;
 }
-.soon{
+.soon {
   color: var(---main-color);
   text-transform: capitalize;
 }
