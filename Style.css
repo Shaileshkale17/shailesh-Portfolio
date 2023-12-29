@@ -507,6 +507,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  align-items: center;
 }
 #Contact .Contact-container form {
   display: flex;
@@ -527,6 +528,9 @@ a {
 #Contact .Contact-container form .FormInput {
   flex-direction: column;
   width: 30rem;
+}
+#Contact .Contact-container form .none {
+  display: none;
 }
 #Contact .Contact-container form .FormInput label {
   display: flex;
@@ -557,6 +561,31 @@ a {
 #Contact .Contact-container form button:hover {
   border: 2px solid var(---main-color-hover);
   color: var(---white-color-hover);
+}
+
+
+/* Success */
+
+.Success-main{
+  display: none;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid var(---main-color);
+  position: relative;
+  padding: 2.5rem 0;
+}
+.Success-main .para .Success{
+  color: var(---main-color);
+}
+.Success-main .para .Success:hover{
+  color: var(---main-color-hover);
+}
+.success-none{
+  display: none;
 }
 
 /* footer Page  */
