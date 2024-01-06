@@ -1,10 +1,10 @@
 :root {
-  ---body-bg: currentcolor;
-  ---Navigation-bg: transparent;
-  ---white-color: white;
-  ---white-color-hover: rgba(255, 255, 255, 0.482);
-  ---main-color: #22c3e6;
-  ---main-color-hover: #22c2e678;
+  --body-bg: currentcolor;
+  --Navigation-bg: transparent;
+  --white-color: white;
+  --white-color-hover: rgba(255, 255, 255, 0.482);
+  --main-color: #22c3e6;
+  --main-color-hover: #22c2e678;
 }
 
 * {
@@ -13,30 +13,36 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: var(---Navigation-bg);
+.image-navber,
+.closes {
+  display: none;
+}
+.header-pos {
+  background-color: var(--Navigation-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
   padding: 0 2rem;
   list-style: none;
-  box-shadow: 0px 0 12px 0px var(---white-color);
+  box-shadow: 0px 0 12px 0px var(--white-color);
 }
 
 body {
-  background-color: var(---body-bg);
+  /* min-width: 100%; */
+  background-color: var(--body-bg);
+  transition: 0.5s;
 }
 
 section {
   min-height: 100vh;
-  min-width: 100vh;
-  color: var(---white-color);
+  min-width: 100%;
+  color: var(--white-color);
 }
 
 .image-Log a {
   text-decoration: none;
-  color: var(---white-color);
+  color: var(--white-color);
   font-size: 1.5rem;
 }
 .image-Log a p {
@@ -44,27 +50,27 @@ section {
   gap: 0 0.3rem;
 }
 .image-Log a:hover {
-  color: var(---white-color-hover);
+  color: var(--white-color-hover);
 }
 
-header nav ul {
+.header-pos nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0 3rem;
 }
-header nav ul li {
+.header-pos nav ul li {
   list-style: none;
 }
-header nav ul li a {
+.header-pos nav ul li a {
   text-decoration: none;
-  color: var(---white-color);
+  color: var(--white-color);
   font-size: 1rem;
   display: flex;
   gap: 0 0.3rem;
 }
-header nav ul li a:hover {
-  color: var(---white-color-hover);
+.header-pos nav ul li a:hover {
+  color: var(--white-color-hover);
 }
 
 .icon {
@@ -74,18 +80,19 @@ header nav ul li a:hover {
 }
 
 .title-name {
-  color: var(---main-color);
+  color: var(--main-color);
 }
 
 /* Home Page  */
 #Home {
-  color: var(---white-color);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 53rem;
+  height: auto;
+  margin-top: 2rem;
 }
 
 #Home .container-Home {
@@ -117,8 +124,8 @@ header nav ul li a:hover {
   gap: 1rem;
 }
 #Home .container-Home .profile-container .Profile .Profile-myBio h1 {
-  color: var(---main-color);
-  text-decoration: underline var(---white-color);
+  color: var(--main-color);
+  text-decoration: underline var(--white-color);
 }
 #Home .container-Home .profile-container .Profile .Profile-myBio p {
   width: 25rem;
@@ -126,13 +133,13 @@ header nav ul li a:hover {
 #Home .container-Home .profile-container .Profile .Profile-myBio button {
   padding: 0.4rem;
   background-color: transparent;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   border-radius: 0.4rem;
-  color: var(---white-color);
+  color: var(--white-color);
 }
 #Home .container-Home .profile-container .Profile .Profile-myBio button:hover {
-  border: 2px solid var(---main-color-hover);
-  color: var(---white-color-hover);
+  border: 2px solid var(--main-color-hover);
+  color: var(--white-color-hover);
 }
 #Home .container-Home .connect-container {
   text-align: center;
@@ -152,7 +159,7 @@ header nav ul li a:hover {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
 }
 
 /* do container */
@@ -169,7 +176,7 @@ header nav ul li a:hover {
   width: 20rem;
 }
 .container-Home .do-container .i_do_container h1 {
-  color: var(---main-color);
+  color: var(--main-color);
 }
 .container-Home .do-container .i_do_container p {
   width: 25rem;
@@ -198,7 +205,7 @@ header nav ul li a:hover {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 1.5rem;
   height: 15rem;
@@ -206,7 +213,7 @@ header nav ul li a:hover {
 .container-Home .do-container .working_tech .box-tech .image-project {
   position: absolute;
   top: -2rem;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   background-color: black;
   padding: 0.4rem;
   border-radius: 2rem;
@@ -222,18 +229,19 @@ header nav ul li a:hover {
 /* Skills Me  */
 
 #Skills {
-  color: var(---white-color);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 45rem;
+  height: auto;
+  margin-top: 2rem;
   gap: 3rem;
 }
 #Skills .title-h1 {
   text-align: center;
-  text-decoration: underline var(---main-color);
+  text-decoration: underline var(--main-color);
 }
 #Skills .title-h1:hover {
 }
@@ -256,7 +264,7 @@ header nav ul li a:hover {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 2.5rem;
 }
@@ -274,14 +282,14 @@ header nav ul li a:hover {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 2.5rem 0;
 }
 #Skills .Skills-container .Skills-language .box-language .image-project {
   position: absolute;
   top: -2rem;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   background-color: black;
   padding: 0.4rem;
   border-radius: 2rem;
@@ -297,7 +305,7 @@ header nav ul li a:hover {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
-  text-decoration: underline var(---main-color);
+  text-decoration: underline var(--main-color);
 }
 
 #Skills .Skills-container .Skills-language .box-language .box-text-tech p {
@@ -307,28 +315,26 @@ header nav ul li a:hover {
 
 a {
   text-decoration: none;
-  color: var(---white-color);
+  color: var(--white-color);
 }
 /* Project  */
 
 #Project {
-  color: var(---white-color);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 85rem;
+  height: auto;
+  margin-top: 2rem;
   gap: 3rem;
 }
 #Project .title-h1 {
   text-align: center;
-  text-decoration: underline var(---main-color);
+  text-decoration: underline var(--main-color);
 }
 
-/* #About .About-container {
-    text-align: center;
-  } */
 #Project .Project-container .Project-container-text {
   display: flex;
   flex-direction: column;
@@ -344,7 +350,7 @@ a {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 2.5rem;
 }
@@ -362,14 +368,14 @@ a {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 2.5rem 0;
 }
 #Project .Project-container .Project-language .box-language .image-project {
   position: absolute;
   top: -2rem;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   background-color: black;
   padding: 0.4rem;
   border-radius: 2rem;
@@ -385,7 +391,7 @@ a {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
-  text-decoration: underline var(---main-color);
+  text-decoration: underline var(--main-color);
 }
 
 #Project .Project-container .Project-language .box-language .box-text-tech p {
@@ -399,23 +405,21 @@ a {
 }
 /* Blog  */
 #Blog {
-  color: var(---white-color);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 75rem;
+  height: auto;
+  margin-top: 2rem;
   gap: 3rem;
 }
 #Blog .title-h1 {
   text-align: center;
-  text-decoration: underline var(---main-color);
+  text-decoration: underline var(--main-color);
 }
 
-/* #About .About-container {
-    text-align: center;
-  } */
 #Blog .Blog-container .Blog-container-text {
   display: flex;
   flex-direction: column;
@@ -431,7 +435,7 @@ a {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 2.5rem;
 }
@@ -449,14 +453,14 @@ a {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 2.5rem 0;
 }
 #Blog .Blog-container .Blog-language .box-language .image-project {
   position: absolute;
   top: -2rem;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   background-color: black;
   padding: 0.4rem;
   border-radius: 2rem;
@@ -472,7 +476,7 @@ a {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
-  text-decoration: underline var(---main-color);
+  text-decoration: underline var(--main-color);
 }
 
 #Blog .Blog-container .Blog-language .box-language .box-text-tech p {
@@ -487,19 +491,20 @@ a {
 }
 /* Contact  */
 #Contact {
-  color: var(---white-color);
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 53rem;
+  height: auto;
   font-size: 1.3rem;
   gap: 4rem;
+  margin-top: 2rem;
 }
 #Contact .title-h1 {
   text-align: center;
-  text-decoration: underline var(---main-color);
+  text-decoration: underline var(--main-color);
 }
 
 #Contact .Contact-container {
@@ -553,20 +558,19 @@ a {
 
 #Contact .Contact-container form button {
   padding: 7px 23px;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   border-radius: 9px;
   background-color: transparent;
-  color: var(---white-color);
+  color: var(--white-color);
 }
 #Contact .Contact-container form button:hover {
-  border: 2px solid var(---main-color-hover);
-  color: var(---white-color-hover);
+  border: 2px solid var(--main-color-hover);
+  color: var(--white-color-hover);
 }
-
 
 /* Success */
 
-.Success-main{
+.Success-main {
   display: none;
   width: 20rem;
   display: flex;
@@ -574,29 +578,30 @@ a {
   align-items: center;
   background-color: transparent;
   text-align: center;
-  border: 2px solid var(---main-color);
+  border: 2px solid var(--main-color);
   position: relative;
   padding: 2.5rem 0;
 }
-.Success-main .para .Success{
-  color: var(---main-color);
+.Success-main .para .Success {
+  color: var(--main-color);
 }
-.Success-main .para .Success:hover{
-  color: var(---main-color-hover);
+.Success-main .para .Success:hover {
+  color: var(--main-color-hover);
 }
-.success-none{
+.success-none {
   display: none;
 }
 
 /* footer Page  */
 footer {
-  color: var(---white-color);
+  margin-top: 2rem;
+  color: var(--white-color);
   text-align: center;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0 12px 0px var(---white-color);
+  box-shadow: 0px 0 12px 0px var(--white-color);
 }
 
 /* Main Classes */
@@ -608,14 +613,619 @@ footer {
 .hrLine {
   width: 100%;
   margin: 12px 0;
-  color: var(---main-color);
+  color: var(--main-color);
 }
 
 .capitalize {
-  color: var(---white-color);
+  color: var(--white-color);
   text-transform: capitalize;
 }
 .soon {
-  color: var(---main-color);
+  color: var(--main-color);
   text-transform: capitalize;
 }
+
+.active {
+  position: relative;
+  height: 26rem;
+  list-style: none;
+  flex-direction: column;
+  transition: 0.2s;
+  top: 0;
+}
+
+.active-ul {
+  display: block;
+}
+
+.Closes {
+  position: relative;
+  height: 0;
+  list-style: none;
+  flex-direction: column;
+  transition: 0.2s;
+  top: -430px;
+}
+
+.Closes-ul {
+  display: none;
+}
+
+/* media screen */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+  .image-navber,
+  .closes {
+    display: block;
+  }
+  .header-pos {
+    width: 100%;
+    height: 4rem;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -411px;
+  }
+
+  header {
+    height: 25px;
+  }
+  .image-navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .header-pos .pos {
+    background-color: var(--Navigation-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 0 2rem;
+    list-style: none;
+    box-shadow: 0px 0 12px 0px var(--white-color);
+    flex-direction: column;
+    position: relative;
+    top: -390px;
+  }
+
+  .header-pos .image-Log {
+    margin: 1rem 0;
+  }
+  .header-pos nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 2rem;
+  }
+  .header-pos nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  #Home {
+    margin-top: 3rem;
+    transition: 0.5s;
+  }
+  #Home .nav2 {
+    display: none;
+  }
+  #Home .container-Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    gap: 2rem;
+  }
+
+  #Home .container-Home .heading-container {
+    width: 80%;
+    text-align: -webkit-center;
+  }
+
+  #Home .container-Home .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #Home .container-Home .profile-container .Profile {
+    display: flex;
+    align-items: center;
+    gap: 0 3rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #Home .container-Home .profile-container .Profile .Profile-myBio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  #Home .container-Home .profile-container .Profile .Profile-myBio p {
+    width: 65%;
+  }
+  .container-Home .do-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container-Home .do-container .i_do_container {
+    width: 72%;
+  }
+
+  .container-Home .do-container .i_do_container p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .container-Home .do-container .working_tech .techBase {
+    grid-template-columns: repeat(1, 1fr);
+
+    width: auto;
+  }
+
+  .container-Home .do-container .working_tech {
+    width: auto;
+  }
+
+  /*Skills  */
+  #Skills .Skills-container .Skills-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    width: auto;
+    gap: 5rem;
+    justify-items: center;
+  }
+  #Skills .Skills-container .Skills-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Skills .Skills-container .Skills-container-text p {
+    width: 80%;
+  }
+
+  /* Project */
+  #Project .Project-container .Project-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Project .Project-container .Project-container-text p {
+    width: 80%;
+  }
+  #Project .Project-container .Project-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    width: auto;
+    gap: 5rem;
+    justify-items: center;
+  }
+
+  /* Blog */
+  #Blog .Blog-container .Blog-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Blog .Blog-container .Blog-container-text p {
+    width: 80%;
+  }
+
+  #Blog .Blog-container .Blog-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    width: auto;
+    gap: 5rem;
+    justify-items: center;
+  }
+  /* Contact */
+  #Contact .Contact-container form .FormInput {
+    width: 100%;
+  }
+  #Contact .Contact-container .Contact-container-text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) and (min-width: 575.98px) {
+  .image-navber,
+  .closes {
+    display: block;
+  }
+  .header-pos {
+    width: 100%;
+    height: 4rem;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -411px;
+  }
+
+  header {
+    height: 25px;
+  }
+  .image-navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .header-pos .pos {
+    background-color: var(--Navigation-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 0 2rem;
+    list-style: none;
+    box-shadow: 0px 0 12px 0px var(--white-color);
+    flex-direction: column;
+    position: relative;
+    top: -390px;
+  }
+
+  .header-pos .image-Log {
+    margin: 1rem 0;
+  }
+  .header-pos nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 2rem;
+  }
+  .header-pos nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  #Home {
+    margin-top: 3rem;
+    transition: 0.5s;
+  }
+  #Home .nav2 {
+    display: none;
+  }
+  #Home .container-Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    gap: 2rem;
+  }
+
+  #Home .container-Home .heading-container {
+    width: 50%;
+    text-align: -webkit-center;
+  }
+
+  #Home .container-Home .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #Home .container-Home .profile-container .Profile {
+    display: flex;
+    align-items: center;
+    gap: 0 3rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #Home .container-Home .profile-container .Profile .Profile-myBio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .container-Home .do-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container-Home .do-container .i_do_container {
+    width: auto;
+  }
+  .container-Home .do-container .working_tech .techBase {
+    grid-template-columns: repeat(2, 1fr);
+
+    width: auto;
+  }
+
+  .container-Home .do-container .working_tech {
+    width: auto;
+  }
+
+  /*Skills  */
+  #Skills .Skills-container .Skills-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: auto;
+    gap: 1rem;
+    justify-items: center;
+  }
+  #Skills .Skills-container .Skills-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Skills .Skills-container .Skills-container-text p {
+    width: 80%;
+  }
+
+  /* Project */
+  #Project .Project-container .Project-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Project .Project-container .Project-container-text p {
+    width: 80%;
+  }
+  #Project .Project-container .Project-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: auto;
+    gap: 3rem 0;
+    justify-items: center;
+  }
+
+  /* Blog */
+  #Blog .Blog-container .Blog-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Blog .Blog-container .Blog-container-text p {
+    width: 80%;
+  }
+
+  #Blog .Blog-container .Blog-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: auto;
+    gap: 3rem 0;
+    justify-items: center;
+  }
+  /* Contact */
+  #Contact .Contact-container form .FormInput {
+    width: 30rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) and (min-width: 767.98px) {
+  .container-Home .do-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container-Home .do-container .working_tech .techBase {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: -25px 0;
+    gap: 2.5rem;
+    overflow-x: clip;
+    overflow-y: hidden;
+    width: 100%;
+    justify-items: center;
+  }
+
+  #Skills .Skills-container .Skills-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 60rem;
+    gap: 5rem;
+    justify-items: center;
+  }
+
+  #Skills .Skills-container .Skills-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Skills .Skills-container .Skills-container-text p {
+    width: 80%;
+  }
+  #Project .Project-container .Project-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 60rem;
+    gap: 5rem;
+    justify-items: center;
+  }
+  #Project .Project-container .Project-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Project .Project-container .Project-container-text p {
+    width: 80%;
+  }
+  #Blog .Blog-container .Blog-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 60rem;
+    gap: 5rem;
+    justify-items: center;
+  }
+
+  #Blog .Blog-container .Blog-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Blog .Blog-container .Blog-container-text p {
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) and (min-width: 991.98px) {
+  .container-Home .do-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container-Home .do-container .working_tech .techBase {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: -25px 0;
+    gap: 2.5rem;
+    overflow-x: clip;
+    overflow-y: hidden;
+    width: 100%;
+    justify-items: center;
+  }
+
+  #Skills .Skills-container .Skills-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 100%;
+    gap: 5rem;
+    justify-items: center;
+  }
+
+  #Skills .Skills-container .Skills-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Skills .Skills-container .Skills-container-text p {
+    width: 80%;
+  }
+  #Project .Project-container .Project-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 100%;
+    gap: 5rem;
+    justify-items: center;
+  }
+  #Project .Project-container .Project-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Project .Project-container .Project-container-text p {
+    width: 80%;
+  }
+  #Blog .Blog-container .Blog-language {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 100%;
+    gap: 5rem;
+    justify-items: center;
+  }
+
+  #Blog .Blog-container .Blog-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  #Blog .Blog-container .Blog-container-text p {
+    width: 80%;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) and (min-width: 1199.98px) {
+}
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
