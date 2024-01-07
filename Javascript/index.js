@@ -26,7 +26,7 @@ closes.onclick = () => {
   let Navber_none = document.querySelector(".image-navber ");
  
 
-  header.style.height = "10px";
+  header.style.height = "9px";
   header.style.transition = "0.5s ease-in-out";
   navber.style.top = "-450px";
   navber.style.height = "0";
