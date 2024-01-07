@@ -659,6 +659,10 @@ footer {
   .closes {
     display: block;
   }
+
+  .closes{
+    margin-bottom: 5px;
+  }
   .header-pos {
     width: 100%;
     height: 4rem;
@@ -869,6 +873,9 @@ footer {
   .image-navber,
   .closes {
     display: block;
+  }
+  .closes{
+    margin-bottom: 5px;
   }
   .image-Log-2 a p {
     display: flex;
