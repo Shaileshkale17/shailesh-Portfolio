@@ -668,12 +668,17 @@ footer {
     position: relative;
     top: -411px;
   }
-
+  .image-Log-2 a p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   header {
     height: 25px;
     transition: 0.5s ease-in-out;
   }
   .image-navber {
+    height: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -864,6 +869,11 @@ footer {
   .image-navber,
   .closes {
     display: block;
+  }
+  .image-Log-2 a p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   .header-pos {
     width: 100%;
@@ -1062,7 +1072,11 @@ footer {
     width: 100%;
     flex-direction: column;
   }
-
+  .image-Log-2 a p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   .container-Home .do-container .working_tech .techBase {
     padding: 2rem;
     display: grid;
@@ -1148,7 +1162,11 @@ footer {
     width: 100%;
     flex-direction: column;
   }
-
+  .image-Log-2 a p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   .container-Home .do-container .working_tech .techBase {
     padding: 2rem;
     display: grid;
