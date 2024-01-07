@@ -671,6 +671,7 @@ footer {
 
   header {
     height: 25px;
+    transition: 0.5s
   }
   .image-navber {
     display: flex;
