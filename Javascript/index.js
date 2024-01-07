@@ -6,7 +6,7 @@ hamburger.onclick = () => {
   let header = document.querySelector("header ");
   let navber = document.querySelector(".header-pos ");
   let Navber_none = document.querySelector(".image-navber ");
-  header.style.transition = "0.5s ease-in-out";
+  header.style.transition = "0.5s";
   // if(navber.classList.contains("active")){
   //     // navber this is the
   // }
@@ -26,7 +26,7 @@ closes.onclick = () => {
   let Navber_none = document.querySelector(".image-navber ");
  
 
-  header.style.height = "9px";
+  header.style.height = "12px";
   header.style.transition = "0.5s ease-in-out";
   navber.style.top = "-450px";
   navber.style.height = "0";
