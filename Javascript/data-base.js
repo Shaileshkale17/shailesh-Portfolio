@@ -3,7 +3,7 @@ const dataetimeid = document.querySelector("#daatetimeid");
 setInterval(() => {
   let dateTime = new Date();
   let Year = dateTime.getFullYear();
-  let Month = dateTime.getMonth();
+  let Month = dateTime.getMonth() + 1;
   let ThisDate = dateTime.getDate();
   let Hours = dateTime.getHours() + 1;
   let Minutes = dateTime.getMinutes();
@@ -24,7 +24,8 @@ form.addEventListener("submit", (e) => {
     }
   )
     .then((response) => response.text())
-    .then((data) => console.log(data)), Success(data);
+    .then((data) => console.log(data)),
+    Success(data);
 
   resetbutton();
 });
@@ -36,10 +37,10 @@ function resetbutton() {
 // success callback
 
 function Success(Success) {
-  if(Success){
-    const form_container = document.querySelector('form');
-    const success_none = document.querySelector('.success-none')
+  if (Success) {
+    const form_container = document.querySelector("form");
+    const success_none = document.querySelector(".success-none");
     form_container.style.display = "none";
-success_none.style.display = "block";
+    success_none.style.display = "block";
   }
 }
