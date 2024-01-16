@@ -1,30 +1,30 @@
 const ProjectData = [
   {
-    Title: "Project 1",
+    Title: "Jewellery",
     Image: "image/icons8-project-80.png",
-    ImageProject: "image/Avatar-shailesh.jpg",
-    Link: "https://www.google.com/",
+    ImageProject: "image/jewellery1452.PNG",
+    Link: "https://shaileshkale17.github.io/JewellerySwift/",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
+      "JewellerySwift is an innovative online platform offering a curated collection of stylish and timeless jewelry pieces. With a focus on quality craftsmanship and unique designs, it provides a seamless shopping experience for those seeking elegant accessories.",
     Languages: ["HTML "," CSS ", " JavaScript"],
   },
   {
-    Title: "Project 1",
+    Title: "Pomodoro Timer",
     Image: "image/icons8-project-80.png",
-    ImageProject: "image/development_img.webp",
-    Link: "#Project",
+    ImageProject: "image/pomoto-time.webp",
+    Link: "https://pomodro-timer-app-shailesh.netlify.app/",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
-      Languages: [],
+      'The Pomodoro Timer is a productivity technique involving 25-minute focused work intervals (Pomodoros) followed by short breaks, aiding concentration and time management. It helps enhance productivity and maintain a balance between work and rest.',
+      Languages: [' reactJs ', ' firebase ' , ' redux ' ],
     },
   {
-    Title: "Project 1",
+    Title: "Github Profile",
     Image: "image/icons8-project-80.png",
-    ImageProject: "image/development_img.webp",
-    Link: "#Project",
+    ImageProject: "image/github-Api.webp",
+    Link: "https://githubprofilesite.netlify.app/",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
-      Languages: [],
+      " GitHub Profile API website provides a seamless interface to access and retrieve information from GitHub user profiles, offering developers a convenient way to integrate and display GitHub data in their applications .  ",
+      Languages: [' React ', ' axios '],
     
     },
   {

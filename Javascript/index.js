@@ -1,4 +1,3 @@
-console.log("HEllo i am runing ");
 
 const hamburger = document.querySelector(".hamburger");
 
