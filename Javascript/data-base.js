@@ -42,5 +42,15 @@ function Success(Success) {
     const success_none = document.querySelector(".success-none");
     form_container.style.display = "none";
     success_none.style.display = "block";
+    setInterval(()=>{
+      moredata()
+    }, 3000);
   }
+}
+
+function moredata(){
+  const form_container = document.querySelector("form");
+    const success_none = document.querySelector(".success-none");
+    form_container.style.display = "flex";
+    success_none.style.display = "none";
 }

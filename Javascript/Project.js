@@ -30,11 +30,17 @@ const ProjectData = [
   {
     Title: "Project 1",
     Image: "image/icons8-project-80.png",
-    ImageProject: "image/development_img.webp",
-    Link: "#Project",
+    ImageProject: "image/ShaileshportfolioImage.png",
+    Link: "https://shaileshkale-portfolio.netlify.app/",
     description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et dolores non quibusdam sed optio error, pariatur explicabo earum iste?",
-      Languages: [],
+      " Shailesh's portfolio showcases a dynamic blend of HTML5, CSS3, and JavaScript, with seamless deployment on Netlify, powered by a robust backend using Google App and data storage in Google Excel Sheets.",
+      Languages : [
+        " HTML5 ",
+        " CSS3 ",
+        " JavaScript ",
+        " BackEnd Google App ",
+        " DataBase Google Excel Sheet "
+      ],
     },
 
 ];
