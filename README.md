@@ -33,9 +33,6 @@ A productivity timer built with ReactJs, Firebase, and Redux, following the Pomo
 #### [GitHub Profile API](#)
 A website providing a seamless interface to access and retrieve information from GitHub user profiles. Built with React and Axios.
 
-#### [Project 1](#)
-My portfolio showcasing a dynamic blend of HTML5, CSS3, and JavaScript. Deployed on Netlify, powered by a robust backend using Google App, and data storage in Google Excel Sheets.
-
 ### My Blog
 Empowering aspiring web developers with cutting-edge insights, tutorials, and trends to navigate the ever-evolving landscape of web development.
 
